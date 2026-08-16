@@ -52,18 +52,13 @@
             text-align: center;
         }
 
-        .avatar {
+        .avatar-img {
             width: 96px;
             height: 96px;
             border-radius: 50%;
-            background: linear-gradient(135deg, #38bdf8, #8b5cf6);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 36px;
-            font-weight: bold;
-            color: #ffffff;
+            object-fit: cover;
             margin: 0 auto 16px;
+            display: block;
             box-shadow: 0 10px 25px -5px rgba(56, 189, 248, 0.3);
         }
 
@@ -153,17 +148,18 @@
     <div class="container">
         <!-- プロフィールエリア -->
         <div class="profile">
-            <div class="avatar">棒</div>
-            <h1 class="name">棒の非</h1>
-            <p class="id">@bounohito</p>
-            <p class="bio">動画制作 / ゲーム開発 / 素材配布 / 人工言語プロジェクト</p>
+            <img src="icon.png" alt="棒の非" class="avatar-img">
+            <h1 class="name">棒人間 / bounohito / 棒の非 / 棒人</h1>
+            <p class="id">@fatenifateni730 / @bounohito / @d7htqvINjly8JT2 / @126949192</p>
+            <p class="bio">動画制作 / ゲーム開発 / 人工言語プロジェクト（作り途中）</p>
+            <p>通り名多すぎだなぁ！</p>
         </div>
 
         <!-- リンク一覧エリア -->
         <div class="links">
             
-            <a href="https://www.youtube.com/@bounohito" class="link-card" target="_blank" rel="noopener">
-                <span class="link-icon">📺</span>
+            <a href="https://www.youtube.com/@fatenifateni730" class="link-card" target="_blank" rel="noopener">
+                <span class="link-icon">🎬</span>
                 <div class="link-content">
                     <span class="link-title">YouTube</span>
                     <span class="link-desc">【動画倉庫】アニメーション・動画作品</span>
@@ -189,7 +185,7 @@
                 <span class="arrow">›</span>
             </a>
 
-            <a href="https://www.freem.ne.jp/" class="link-card" target="_blank" rel="noopener">
+            <a href="https://www.freem.ne.jp/brand/16357" class="link-card" target="_blank" rel="noopener">
                 <span class="link-icon">🎮</span>
                 <div class="link-content">
                     <span class="link-title">ふりーむ！</span>
@@ -198,17 +194,17 @@
                 <span class="arrow">›</span>
             </a>
 
-            <a href="https://x.com/bounohito" class="link-card" target="_blank" rel="noopener">
+            <a href="https://x.com/d7htqvINjly8JT2" class="link-card" target="_blank" rel="noopener">
                 <span class="link-icon">🌐</span>
                 <div class="link-content">
-                    <span class="link-title">X (旧Twitter)</span>
-                    <span class="link-desc">【日常・進捗】最新情報・短尺動画</span>
+                    <span class="link-title">Twitter (X)</span>
+                    <span class="link-desc">【知名度を上げる】呟き・動画</span>
                 </div>
                 <span class="arrow">›</span>
             </a>
 
-            <a href="https://www.nicovideo.jp/" class="link-card" target="_blank" rel="noopener">
-                <span class="link-icon">🎬</span>
+            <a href="https://www.nicovideo.jp/user/126949192/" class="link-card" target="_blank" rel="noopener">
+                <span class="link-icon">📺</span>
                 <div class="link-content">
                     <span class="link-title">ニコニコ動画</span>
                     <span class="link-desc">【動画投稿】ニコニコでの公開作品</span>
