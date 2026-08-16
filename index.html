@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>棒の非 / bounohito - Portal</title>
+    <!-- OGP設定（X等で貼った時のサムネイル情報） -->
+    <meta property="og:title" content="棒の非 / bounohito">
+    <meta property="og:description" content="棒の非（bounohito）の活動拠点・各種プラットフォームへのリンク集">
+    <meta property="og:type" content="website">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.8);
+            --card-hover: rgba(51, 65, 85, 0.9);
+            --text-main: #f8fafc;
+            --text-sub: #94a3b8;
+            --accent: #38bdf8;
+            --border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            background-image: 
+                radial-gradient(at 20% 20%, rgba(56, 189, 248, 0.15) 0px, transparent 50%),
+                radial-gradient(at 80% 80%, rgba(139, 92, 246, 0.15) 0px, transparent 50%);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .profile {
+            text-align: center;
+        }
+
+        .avatar {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #38bdf8, #8b5cf6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 36px;
+            font-weight: bold;
+            color: #ffffff;
+            margin: 0 auto 16px;
+            box-shadow: 0 10px 25px -5px rgba(56, 189, 248, 0.3);
+        }
+
+        .name {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            margin-bottom: 4px;
+        }
+
+        .id {
+            font-size: 14px;
+            color: var(--text-sub);
+            margin-bottom: 12px;
+        }
+
+        .bio {
+            font-size: 14px;
+            color: var(--text-sub);
+            line-height: 1.6;
+        }
+
+        .links {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .link-card {
+            display: flex;
+            align-items: center;
+            padding: 16px 20px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            text-decoration: none;
+            color: var(--text-main);
+            backdrop-filter: blur(8px);
+            transition: all 0.2s ease;
+        }
+
+        .link-card:hover {
+            background: var(--card-hover);
+            transform: translateY(-2px);
+            border-color: var(--accent);
+        }
+
+        .link-icon {
+            font-size: 24px;
+            margin-right: 16px;
+            width: 32px;
+            text-align: center;
+        }
+
+        .link-content {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .link-title {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .link-desc {
+            font-size: 12px;
+            color: var(--text-sub);
+            margin-top: 2px;
+        }
+
+        .arrow {
+            color: var(--text-sub);
+            font-size: 18px;
+        }
+
+        footer {
+            font-size: 12px;
+            color: var(--text-sub);
+            margin-top: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- プロフィールエリア -->
+        <div class="profile">
+            <div class="avatar">棒</div>
+            <h1 class="name">棒の非</h1>
+            <p class="id">@bounohito</p>
+            <p class="bio">動画制作 / ゲーム開発 / 素材配布 / 人工言語プロジェクト</p>
+        </div>
+
+        <!-- リンク一覧エリア -->
+        <div class="links">
+            
+            <a href="https://www.youtube.com/@bounohito" class="link-card" target="_blank" rel="noopener">
+                <span class="link-icon">📺</span>
+                <div class="link-content">
+                    <span class="link-title">YouTube</span>
+                    <span class="link-desc">【動画倉庫】アニメーション・動画作品</span>
+                </div>
+                <span class="arrow">›</span>
+            </a>
+
+            <a href="https://scratch.mit.edu/users/bounohito/" class="link-card" target="_blank" rel="noopener">
+                <span class="link-icon">🐱</span>
+                <div class="link-content">
+                    <span class="link-title">Scratch</span>
+                    <span class="link-desc">【メイン作品集】遊べるゲーム＆インタラクティブ作品</span>
+                </div>
+                <span class="arrow">›</span>
+            </a>
+
+            <a href="https://github.com/bounohito" class="link-card" target="_blank" rel="noopener">
+                <span class="link-icon">💻</span>
+                <div class="link-content">
+                    <span class="link-title">GitHub</span>
+                    <span class="link-desc">【開発拠点】自作言語プロジェクト・開発物</span>
+                </div>
+                <span class="arrow">›</span>
+            </a>
+
+            <a href="https://www.freem.ne.jp/" class="link-card" target="_blank" rel="noopener">
+                <span class="link-icon">🎮</span>
+                <div class="link-content">
+                    <span class="link-title">ふりーむ！</span>
+                    <span class="link-desc">【フリーゲーム】ゲーム配布ページ</span>
+                </div>
+                <span class="arrow">›</span>
+            </a>
+
+            <a href="https://x.com/bounohito" class="link-card" target="_blank" rel="noopener">
+                <span class="link-icon">🌐</span>
+                <div class="link-content">
+                    <span class="link-title">X (旧Twitter)</span>
+                    <span class="link-desc">【日常・進捗】最新情報・短尺動画</span>
+                </div>
+                <span class="arrow">›</span>
+            </a>
+
+            <a href="https://www.nicovideo.jp/" class="link-card" target="_blank" rel="noopener">
+                <span class="link-icon">🎬</span>
+                <div class="link-content">
+                    <span class="link-title">ニコニコ動画</span>
+                    <span class="link-desc">【動画投稿】ニコニコでの公開作品</span>
+                </div>
+                <span class="arrow">›</span>
+            </a>
+
+        </div>
+
+        <footer>
+            <p>© 棒の非 / bounohito</p>
+        </footer>
+    </div>
+
+</body>
+</html>
